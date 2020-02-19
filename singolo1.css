@@ -1,3 +1,87 @@
-body {
+.header {
+    width: 1020px;
+    height: 89px;
+    background: #2d303a;
+    border-bottom: 6px solid #323746;
 
+}
+
+div.logo {
+    font-size: 25px;
+line-height: 6px;
+color: #ffffff;
+font-family: "Lato";
+font-weight: 700;
+text-align: left;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: pink;
+    background-size: cover;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    width: 1020px;
+}
+
+.nav-bar ul li a {
+    font-size: 12px;
+    line-height: 6px;
+    color: #fff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-services {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.fusce {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+.curabitur {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.custom {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.services {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
 }
