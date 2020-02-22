@@ -1,4 +1,4 @@
-@import "lato.css";
+@import "./assets/fonts/Lato-Thin.ttf";
 
 html {
   font-size: 10px;
@@ -6,18 +6,17 @@ html {
 
 body {
    font-family: "Lato", "Arial", sans-serif;
-   font-weight: 400;
-   
+   font-weight: 400;   
    margin: 0;
    padding: 0;
    background-color: 100%;
 }
 
 .wrapper {
-    width: 1020px;  
-    align-items: center;  
-    padding: 0 40px;
-    margin: 0 auto;
+  width: 1020px;  
+  align-items: center;  
+  padding: 0 40px;
+  margin: 0 auto;
 }
 
 .header {
@@ -46,22 +45,22 @@ span {
 }
 
 .nav-bar ul {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 8px;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; 
 }
+  
 .nav-bar ul li {
-    
-    margin-top: 40px;
-    margin-right: 11px;
-    letter-spacing: -0.04rem;
-    font-size: 23px;
-    line-height: 1.5rem;
+  margin-top: 40px;
+  margin-right: 11px;
+  letter-spacing: -0.6px;
+  font-size: 23px;
+  line-height: 13px;
 }
 
 .nav-bar ul li:last-child {
-     margin-right: 35px;
+     margin-right: 40px;
 }
 
 .nav-bar ul li a {
@@ -110,12 +109,12 @@ span {
 }
 
 .back-next:hover {
-    cursor: pointer;
-    color: black;
-    opacity: 0.5;
+  cursor: pointer;
+  color: black;
+  opacity: 0.5;
 }
 
- .back-to {
+.back-to {
    margin-top: -22px;
  }
 .next-to {
@@ -132,58 +131,162 @@ span {
 }
 
 .phone-vertical {
-  margin-top: -25px;
-  margin-left: 40px;
+  margin-top: -23px;
+  margin-left: 44px;
 }
 
 .phone-horizontal {
   margin-top: -25px;
- margin-left: 75px; 
  margin-right: 50px;
+ margin-left: 72px; 
+ 
 } 
 
 .our-services {
-    font-size: 30px;
-    line-height: 18px;
-    color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
-    text-align: left;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 495px;
+    background-color: #f2f2f2;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
 }
 
-.fusce {
-    width: 940px;
-    height: 57px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #767e9e;
-    font-family: "Lato";
-    font-weight: 300;
-    text-align: left;
+h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 700;
+  text-align: left;
+
+}
+.services {
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  background-color: #f2f2f2;
 }
 
-.curabitur {
-    width: 219px;
-    height: 128px;
+p.text {
+  padding-top: 27px;
+}
+
+h3 {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato Light", sans-serif;
+    font-style: normal;
+    font-weight: 100;
     text-align: left;
+    letter-spacing: -2px;
 }
+ .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
 
-.custom {
-    font-size: 18px;
-    line-height: 18px;
-    color: #666d89;
-    font-family: "Lato";
+  .item {
+    position: relative;
+    width: 310px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .item:nth-child(-n+3) {
+    margin-bottom: 23px;
+  }
+  .pen,
+  .phone {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+
+  .lamp {
+    position: absolute;
+    top: 1px;
+    left: 4px;
+  }
+
+  .heart,
+  .star {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+  }
+
+  .bubble {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+  }
+
+  .caption {
+    position: absolute;
+    top: -2px;
+    margin: 0;
     font-weight: 900;
-    text-align: left;
-}
+    font-size: 18px;
+    color: #666d89;
+  }
+  .description {
+    position: absolute;
+    top: 28px;
+     width: 220px;
+    margin: 0;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    font-family: Lato, sans-serif;
+    text-align: justify;
+    color: #666d89;
+  }
 
-.services {
-    width: 1020px;
-    height: 495px;
-    background-color: #f2f2f2;
+  .design {
+    left: 79px;
+  }
+
+  .ideas,
+  .about-ideas {
+    left: 84px;
+  }
+
+  .answer {
+    left: 90px;
+  }
+
+  .responsive,
+  .about-responsive {
+    left: 80px;
+  }
+
+  .support {
+    left: 83px;
+    letter-spacing: -0.02rem;
+  }
+
+  .feel {
+    left: 91px;
+  }
+
+  .about-design {
+    left: 81px;
+  }
+
+  .about-answer,
+  .about-feel {
+    left: 90px;
+  }
+
+  .about-support {
+    left: 85px;
 }
