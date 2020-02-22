@@ -34,10 +34,10 @@ body {
     margin-top: 35px;
     margin-left: 40px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 23px;
     letter-spacing: -0.01rem;
-    line-height: 2.1rem;
+    line-height: 2rem;
 }
     
 
@@ -53,17 +53,13 @@ span {
 }
 .nav-bar ul li {
     
-    margin-top: 30px;
-    margin-right: 25px;
-    letter-spacing: -0.03rem;
-    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-right: 11px;
+    letter-spacing: -0.04rem;
+    font-size: 23px;
     line-height: 1.5rem;
 }
 
-.nav-bar ul li:first-child {
-  margin-left: 450px;
-  margin-top: 43px;
-}
 .nav-bar ul li:last-child {
      margin-right: 35px;
 }
@@ -86,9 +82,9 @@ span {
 }
 
 .nav-bar li:not(:first-child)::before {
-  content: ".";
+  content: "\2219";
   display: inline-block;
-  width: 0.5rem;
+  width: 2rem;
   line-height: 2px;
   color: #494e62;
     
@@ -112,6 +108,13 @@ span {
 .back-next {
     cursor: pointer;
 }
+
+.back-next:hover {
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+}
+
  .back-to {
    margin-top: -22px;
  }
