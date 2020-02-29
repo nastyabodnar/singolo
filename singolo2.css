@@ -137,6 +137,9 @@ body {
  .flex-image:nth-child(4n) {
     margin-right: 0;
 }
+ .flex-image:nth-child(n+13) {
+     display: none;
+}
 
 .last-row {
     margin-bottom: 64px;
