@@ -129,7 +129,7 @@ input {
     border-radius: 5px;
     padding: 10px 13px;
     font-family: "Lato", Verdana, sans-serif;
-    font-size: 9pt;
+    font-size: 1.2rem;
     width: 620px;
   }
  
@@ -186,7 +186,7 @@ button.button-submit:hover {
     font-family: "Lato", Verdana, sans-serif;
     font-weight: 400;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 a.contact-information__link {
@@ -201,3 +201,37 @@ a.contact-information__link {
    
 }
 
+.footer {
+    background-color: #2d303a;
+    
+}
+
+.footer-content {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    color: #666d89;
+    font-family: "Lato", Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.015rem;
+    text-align: left;
+}
+
+.social-network  {
+    margin-left: 694px;
+}
+
+.social-network__gl {
+    margin-left: 3px;
+}
+
+.social-network__li {
+    margin-left: 1.2px;
+}
