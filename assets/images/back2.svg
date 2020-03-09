@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 134 220" style="enable-background:new 0 0 134 220;" xml:space="preserve">
-<g>
-	<path d="M109,219.4c-6.5,0-12.7-2.5-17.3-7.2L7.5,128c-4.8-4.8-7.4-11.2-7.2-18c-0.2-6.8,2.4-13.2,7.2-18L91.7,7.8
-		c4.6-4.6,10.8-7.2,17.3-7.2s12.7,2.5,17.3,7.2s7.2,10.8,7.2,17.3c0,6.5-2.5,12.7-7.2,17.3L58.8,110l67.5,67.5
-		c4.6,4.6,7.2,10.8,7.2,17.3c0,6.5-2.5,12.7-7.2,17.3C121.7,216.8,115.5,219.4,109,219.4z"/>
-	<path d="M109,1.1c6.4,0,12.4,2.5,17,7c4.5,4.5,7,10.6,7,17s-2.5,12.4-7,17l-67.2,67.2l-0.7,0.7l0.7,0.7l67.2,67.2
-		c4.5,4.5,7,10.6,7,17s-2.5,12.4-7,17c-4.5,4.5-10.6,7-17,7c-6.4,0-12.4-2.5-17-7L7.9,127.7c-4.7-4.7-7.2-11-7-17.6l0,0l0,0
-		c-0.2-6.7,2.3-12.9,7-17.6L92,8.2C96.6,3.6,102.6,1.1,109,1.1 M109,0.1c-6.4,0-12.8,2.4-17.7,7.3L7.2,91.6
-		c-5.1,5.1-7.5,11.8-7.3,18.4c-0.2,6.6,2.2,13.3,7.3,18.4l84.1,84.1c4.9,4.9,11.3,7.3,17.7,7.3s12.8-2.4,17.7-7.3
-		c9.8-9.8,9.8-25.6,0-35.4L59.5,110l67.2-67.2c9.8-9.8,9.8-25.6,0-35.4v0C121.8,2.6,115.4,0.1,109,0.1L109,0.1z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" width="16" height="27">
+	<defs>
+		<image width="16" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAYAAAB1NA+iAAACE0lEQVQ4T42UvWsUYRDGn9kzIAjW/hE2gndZ7GLybva9SzTBQsUPEFJZCBoVFYs0FmoCWidoFAsRoiLmcp9WAW83pR/4WVnoYamiiPc+sqcXcrl393bLnZnfzLzzzAhSfpyZccLV4CIEBwD8BmRhsFpckJTxCDx9B8TxLn/BZCpAQ+lZAaY3JyNksS8gUPoqgPMxlV5IBARKXwFwyRoseN4SMxYLCFT+DMC5mMyvaAaG3fqTphUQKj1NYNYaTLzNGBR2P1v5GNl7AIHKTwGctwUT8sY4rfE95fKHjr0LEHr6CInbAAZ6AIIvDhyVrSy/3GhbBzQ8/5BQ7gHIWLI3xXA8Vy+tbba1AcGIPwqRJQDbbMGOY/Zly+XQ1pYEnt4L4hGA7RaH7wJO5KqlepxiJVD6BYCdFoevoDkxWCsvJ8k9AvwEsLWnN8GNXGXldL9diQBRb1mL4w8Kp9xK6X5iBWsjepdxUASxwwYBzcGkNtpTaIwWhsSYx9aHJL4B5nAcZF0H/0f5IG4aJLVbK61addD5GXj5MZAPrUoEmjY99OxCqPyjhNyKgXx2HDOxUVTWbWyo/DEBI8gWy8N+IjLDbvXpe+s2dgJCzz9Fys2YEb5rOaYQbWXiRUq8C8DrP9Ia6n8TPf8cKNdijsvlvoD2tsYcVgrmUwEiSOjp6yTOdlVC+qkB/yD+SVL2C/DLUO66teLSX9iMybPX5EjiAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Slider">
+		<use id="chev" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
 </svg>
