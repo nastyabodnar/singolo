@@ -594,9 +594,13 @@ a.social-li {
     color: #f48c8f;
 }
 #form:hover {
-    outline: red solid 2px;
+    outline: black solid 1px;
     transition: cubic-bezier(0.77, 0, 0.175, 1) ;
     outline-style: auto;
+}
+
+#form:invalid {
+  border: red solid 3px;
 }
 
 input {
@@ -638,7 +642,7 @@ button.button-submit {
 }
 
 button.button-submit:hover {
-    outline: red solid 2px;
+    outline: black solid 1px;
     transition: cubic-bezier(0.77, 0, 0.175, 1) ;
     outline-style: auto;
 }
