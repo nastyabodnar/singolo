@@ -43,6 +43,7 @@ body {
     font-family: "Lato", Verdana, sans-serif;
     font-weight: 500;
     text-align: left;
+    letter-spacing: -0.2rem;
 }
 
 
@@ -236,6 +237,7 @@ button.next-to {
   font-weight: 300;
   width: 940px;
   text-align: justify;
+   letter-spacing: -0.01rem; 
 }
 
  .layout-3-column {
@@ -345,12 +347,17 @@ button.next-to {
    width: 940px;
 }
 
+.portfolio-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tag {
    font-family: "Lato", Verdana, sans-serif;
    color: #767e9e;
    font-size: 1.2rem;
    line-height: 18px;
-   font-weight: 500;
+   font-weight: 400;
    text-align: left;
    background: #2d303a;
    cursor: pointer;
@@ -358,7 +365,7 @@ button.next-to {
    border: 1px solid  #767e9e;
    margin-bottom: 19px;
    margin-top: 8px;;
-   margin-right: 7px;
+   margin-right: 5px;
 }
 
 .tag-selected {
@@ -428,6 +435,7 @@ button.next-to {
    text-align: justify;
    letter-spacing: 0.017px;
    text-overflow: clip;
+   letter-spacing: -0.01rem; 
 }
 
 .layout-3-column-about {
@@ -570,6 +578,7 @@ a.social-li {
     font-weight: 300;
     text-align: justify;
     letter-spacing: 0rem;
+    letter-spacing: -0.01rem;
 }
 
 .layout-2-column {
