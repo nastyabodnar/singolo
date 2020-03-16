@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: "Lato";
     src: url("assets/fonts/Lato/Lato-Black.ttf") format("truetype");
     font-weight: 900;
@@ -403,11 +403,11 @@ body:hover {
 
 .portfolio-content {
    width: 940px;
-}
+   }
 
-.portfolio-tags {
+.portfolio__tags {
   display: flex;
-  justify-content: space-between;
+  
 }
 
 .portfolio__tag {
@@ -420,10 +420,13 @@ body:hover {
     font-size: 11px;
     font-weight: 900;
     cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px; 
 }
 
 
-.tag-selected {
+
+.tag_selected {
    color: #dedede;
    border-color: #dedede;
 }
