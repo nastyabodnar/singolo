@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> 
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./assets/fonts/fonts.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/fonts/fonts.css">
         <title>Singolo</title>
     </head>
 <body>
-    <main class="main" id="main">
     <section class="modal-window display-none" id="modal-window" onclick="closeModal(event)">
         <div class="modal-submit" id="modal-submit">
             <div class="modal-button" id='modal-button'>
@@ -35,34 +34,31 @@
         </div>
     </div>
     </header> 
-    
+    <main class="main" id="main">
     <section class="slider" id="slider-section">
          <div  class="wrapper slider-content" id="slides">
             <div class="slide slide-1 showing">
-            <img class="slider__arrow" src="assets/images/back2.svg">
-            <div class="slider__list">
+                <div class="slider__list">
                 <div class="slide slide-1 showing">
-                    <img src="./assets/img/Screen1.png" class="slider__img img-one" onclick="delWallpaper()">
-                    <img src="./assets/img/Screen2.png" class="slider__img img-two" onclick="delWallpaper()">
-                    <img src="./assets/img/Cam.png" class="slider__phone phone-one">
-                    <img src="./assets/img/Shadow.png" class="slider__shadow shadow-one">
-                    <img src="./assets/img/Cam.png" class="slider__phone phone-two">
-                    <img src="./assets/img/Shadow.png" class="slider__shadow shadow-two">
+                    <img src="assets/images/Screen1.png" class="slider__img img-one" onclick="delWallpaper()">
+                    <img src="assets/images/Screen2.png" class="slider__img img-two" onclick="delWallpaper()">
+                    <img src="assets/images/Cam.png" class="slider__phone phone-one">
+                    <img src="assets/images/Shadow.png" class="slider__shadow shadow-one">
+                    <img src="assets/images/Cam.png" class="slider__phone phone-two">
+                    <img src="assets/images/Shadow.png" class="slider__shadow shadow-two">
                 </div>
 
                 <div class="slide blue">
-                    <img class="slide-2 blue" src="./assets/img/Slide-2.png">
+                    <img class="slide-2 blue" src="assets/images/Slide-2.png">
                 </div>
 
                 <div class="arrows">
-                    <img src="./assets/img/svg/arrow-left.svg" class="slider__arrow arrow-left" onclick="slider()">
-                    <img src="./assets/img/svg/arrow-right.svg" onclick="slider()" class="slider__arrow arrow-right">
+                    <img src="assets/images/back2.svg" class="slider__arrow arrow-left" onclick="slider()">
+                    <img src="assets/images/next-to.svg" onclick="slider()" class="slider__arrow arrow-right">
                 </div>
             </div>
         </section>
-       </section>                     
-                      
-     
+      
     <section class="our-services" id="our-services">
     <div  class="wrapper">  
        <div class="services">
@@ -217,7 +213,7 @@
                 </div>
             </div>
         </section>
-                            
+    </main>                    
                             
         <section class="get-a-quote" id="get-a-quote">
             <div class="wrapper">
@@ -269,7 +265,7 @@
                 </div>      
             </div>
         </section>
-    </body>
+    
         <footer class="footer">
             <div class="wrapper">
                 <div class="footer-content">
@@ -291,7 +287,8 @@
                 </div>
             </div>
         </footer>
-       </main>
-    <script src="script.js"></script>                      
+      
+    <script src="script.js"></script>  
+    </body>                    
     </html>
     
