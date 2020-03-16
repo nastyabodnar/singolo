@@ -11,13 +11,21 @@
     </head>
 <body>
     <main class="main" id="main">
+    <section class="modal-window display-none" id="modal-window" onclick="closeModal(event)">
+        <div class="modal-submit" id="modal-submit">
+            <div class="modal-button" id='modal-button'>
+                <button>ok</button>
+             </div>
+        </div>
+    </section>
+    
     <header class="header"> 
     <div class="wrapper">
         <div class="header__menu">
            <div class="logo"><h1>SINGOLO<span class="star">*</span></h1></div>
                 <nav class="header__menu nav-bar">
                     <ul class nav-bar>
-                        <li><a href="#main" class="navigation__link">HOME </a></li>
+                        <li><a href="#main" class="link-active">HOME</a></li>
                         <li><a href="#our-services" class="navigation__link">SERVICES</a></li>
                         <li><a href="#portfolio" class="navigation__link">PORTFOLIO</a></li>
                         <li><a href="#about-us" class="navigation__link">ABOUT</a></li>
@@ -28,29 +36,32 @@
     </div>
     </header> 
     
-    <section class="slider">
-    <div  class="wrapper">
-         <div class="slider__arrow"></div>
+    <section class="slider" id="slider-section">
+         <div  class="wrapper slider-content" id="slides">
+            <div class="slide slide-1 showing">
+            <img class="slider__arrow" src="assets/images/back2.svg">
             <div class="slider__list">
-                <div class="slider__phone">
-                    <div class="slider__phone__container">
-                        <img src="assets/images/iphone.png" alt="phone" class="phone">
-                        <img src="assets/images/shadow.png" alt="phone" class="phone__shadow">
-                        <div class="phone__screen"></div>
-                    </div>
+                <div class="slide slide-1 showing">
+                    <img src="./assets/img/Screen1.png" class="slider__img img-one" onclick="delWallpaper()">
+                    <img src="./assets/img/Screen2.png" class="slider__img img-two" onclick="delWallpaper()">
+                    <img src="./assets/img/Cam.png" class="slider__phone phone-one">
+                    <img src="./assets/img/Shadow.png" class="slider__shadow shadow-one">
+                    <img src="./assets/img/Cam.png" class="slider__phone phone-two">
+                    <img src="./assets/img/Shadow.png" class="slider__shadow shadow-two">
                 </div>
-                <div class="slider__phone phone_rotate">
-                    <div class="slider__phone__container">
-                        <img src="assets/images/iphone.png" alt="phone" class="phone">
-                        <img src="assets/images/shadow.png" alt="phone" class="phone__shadow phone__shadow_rotate">
-                        <div class="phone__screen phone__screen_horizontal"></div>
-                    </div> 
+
+                <div class="slide blue">
+                    <img class="slide-2 blue" src="./assets/img/Slide-2.png">
+                </div>
+
+                <div class="arrows">
+                    <img src="./assets/img/svg/arrow-left.svg" class="slider__arrow arrow-left" onclick="slider()">
+                    <img src="./assets/img/svg/arrow-right.svg" onclick="slider()" class="slider__arrow arrow-right">
                 </div>
             </div>
-            <div class="slider__list slider__list_two"></div> 
-            <div class="slider__arrow arrow_rotate"></div> 
-        </div>
+        </section>
        </section>                     
+                      
      
     <section class="our-services" id="our-services">
     <div  class="wrapper">  
