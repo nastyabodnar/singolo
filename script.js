@@ -14,105 +14,106 @@ nav.addEventListener('click', e => {
     let target = e.target
         if(target.tagName != 'A') return
 
-        navLinks.forEach(el => el.classList.remove('active'))
-        target.classList.add('active')
+        navLinks.forEach(el => el.classList.remove('link-active'))
+        target.classList.add('link-active')
 }) 
 
-slider.addEventListener('click', e => {
-    let target = e.target   
-        if(target.className != 'phone') return 
+// slider
+const SLIDES = document.querySelectorAll('#slides .slide');
+const SLIDER_SECTION = document.getElementById('slider-section');
+const SLIDER_ARROW = document.getElementsByClassName('slider__arrow');
+var currentSlide = 0;
 
-        target.parentElement.lastElementChild.classList.toggle('phone__screen_off')
-}) 
-
-portNavTags.addEventListener('click', e => {
-    let target = e.target
-        if(target.tagName != 'A') return
-
-        portTag.forEach(el => el.classList.remove('portfolio-active'))
-        target.classList.add('portfolio-active')
-        portImages.forEach(el => el.style.order = Math.trunc(Math.random() * 10))
-}) 
-
-portfolio.addEventListener('click', e => {
-    let target = e.target
-        if(target.tagName != 'IMG') {
-            portImages.forEach(el => el.classList.remove('img-selected'))
-            return
-        }
-
-        portImages.forEach(el => el.classList.remove('img-selected'))
-        target.classList.toggle('img-selected')
-})
-
-submit.addEventListener('click', () => {
-
-    let mess     = document.getElementById('message-block'),
-        form     = document.forms.quote,
-        name     = form.name.value,
-        email    = form.email.value,
-        subject  = form.subject.value,
-        textarea = document.querySelector('.form__txt').value,
-        regexp   = /[A-Za-z]/gi
-
-    form.onsubmit = e => e.preventDefault()
-
-    if(!name || !email || !regexp.test(name)) return
-
-    function createText(sub, text) {
-
-        message__text.innerText = ''
-        message__text.innerText = `Тема:  ${sub} 
-                                   Описание:  ${text}`
-
-        if(!sub)          message__text.innerText = `No topic
-                                                     Description:  ${text}`
-
-        if(!text)         message__text.innerText = `Topic:  ${sub}
-                                                     No description `
-
-        if(!sub && !text) message__text.innerText = `No topic
-                                                     No description`
-    }
-
-     createText(subject, textarea)
-
-    mess.classList.toggle('hidden')
-})
-
-closeBtn.addEventListener('click', () => {
-    let messageBlock = document.getElementById('message-block')
-    messageBlock.classList.toggle('hidden')
-})
-
-function changeSlide(pos) {
-    slides[0].style.left = pos 
-    slides[1].style.left = '0px'
-    slides = slides.reverse(); 
-        setTimeout(() => {
-            slides[1].remove();
-            slides[1].style.left = pos;
-            slider.append(slides[1]);
-        },500)
-}
-
-function changeInitPosition(pos){
-    slides.forEach(el => el.classList.add('animate'))
-    if(slides[1].style.left !== pos) {
-        setTimeout(() => {
-            slides[1].remove();
-            slides[1].style.left = pos;
-            slider.append(slides[1]);
-        },100)
+const slider = () => {
+    SLIDES[currentSlide].className += 'slide';
+    currentSlide = (currentSlide + 1) % SLIDES.length;
+    if (SLIDES[currentSlide].classList.contains('blue')) {
+        SLIDER_SECTION.style.backgroundColor = '#648bf0';
+        SLIDER_SECTION.style.borderBottomColor = '#5173cb';
+        SLIDES[currentSlide].className += ' showing';
+    } else {
+        // SLIDER_SECTION.style.transition = 'ease-out 0.2s';;
+        SLIDER_SECTION.style.backgroundColor = '#f06c64';
+        SLIDER_SECTION.style.borderBottomColor = '#ea676b';
+        SLIDES[currentSlide].className += ' showing';
     }
 }
 
-arrows[0].addEventListener('click', function(){
-    changeInitPosition(position[0])
-    setTimeout(() => changeSlide(position[1]),120)
+// lock phone
+const PHONE_WALLPAPER = document.getElementsByClassName('slider__img');
+const delWallpapaer = () => {
+    let elem = this.event.target;
+    if (elem.classList.contains('none'))
+        elem.classList.remove('none')
+    else
+        elem.classList.add('none');
+}
+
+// portfolio navigation
+NAVIGATION.addEventListener('click', (event) => {
+    NAVIGATION.querySelectorAll('a').forEach(item => {
+        item.classList.remove('link-active');
+    });
+    event.target.classList.add('link-active');
 })
 
-arrows[1].addEventListener('click', function(){
-    changeInitPosition(position[1])
-    setTimeout(() => changeSlide(position[0]),120)
+// portfolio random image
+const PORTFOLIO_TAG = document.getElementById('portfolio__tag');
+const PORTFOLIO_IMAGES = document.getElementById('portfolio__images');
+
+const randomImages = (event) => {
+    let target = event.target;
+    if (target.tagName == 'a') {
+
+        PORTFOLIO_TAG.querySelectorAll('a').forEach(item => {
+            item.classList.remove('tag_selected');
+        });
+        target.classList.add('tag_selected');
+
+        let srcArray = [];
+        PORTFOLIO_IMAGES.querySelectorAll('img').forEach(item => {
+            srcArray.push(item.src);
+            item.src = '';
+        })
+
+        let randArray = srcArray.sort(function() {
+            return Math.random() - 0.5;
+        });
+
+        PORTFOLIO_IMAGES.querySelectorAll('img').forEach((item, index) => {
+            item.src = randArray[index];
+        })
+    }
+}
+
+// portfolio active image
+PORTFOLIO_IMAGES.addEventListener('click', event => {
+    let target = event.target;
+    if (target.tagName == 'IMG') {
+        PORTFOLIO_IMAGES.querySelectorAll('img').forEach(item => {
+            item.style.boxShadow = "none";
+        });
+        event.target.style.boxShadow = "0px 0px 0px 2px rgba(255,0,0,1)";
+    }
 })
+
+//modal window
+const MODAL_WINDOW = document.getElementById('modal-window');
+const MODAL_BUTTON = document.getElementById('modal-button');
+const MODAL_SUBMIT = document.getElementById('modal-submit');
+
+const FORM = document.getElementById('form');
+const NAME_INPUT = document.getElementById('name');
+const EMAIL_INPUT = document.getElementById('email');
+const TEXT_INPUT = document.getElementById('txt');
+const DESCR_INPUT = document.getElementById('description');
+
+const closeModal = (event) => {
+    if (event.target.tagName == "SECTION" || event.target.tagName == "BUTTON") {
+        MODAL_WINDOW.classList.add('display-none');
+        let added = document.getElementById('added');
+        MODAL_SUBMIT.removeChild(added);
+        FORM.reset();
+    }
+}
+
