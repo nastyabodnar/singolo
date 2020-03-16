@@ -3,23 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> 
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./assets/fonts/fonts.css">
         <title>Singolo</title>
     </head>
 <body>
+    <main class="main" id="main">
     <header class="header"> 
     <div class="wrapper">
         <div class="header__menu">
            <div class="logo"><h1>SINGOLO<span class="star">*</span></h1></div>
                 <nav class="header__menu nav-bar">
-                    <ul>
-                        <li><a href="#">HOME </a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">PORTFOLIO </a></li>
-                        <li><a href="#">ABOUT </a></li>
-                        <li><a href="#">CONTACT </a></li>
+                    <ul class nav-bar>
+                        <li><a href="#main class="navigation__link">HOME </a></li>
+                        <li><a href="#our-services" class="navigation__link">SERVICES</a></li>
+                        <li><a href="#portfolio" class="navigation__link">PORTFOLIO</a></li>
+                        <li><a href="#about-us" class="navigation__link">ABOUT</a></li>
+                        <li><a href="#get-a-quote" class="navigation__link">CONTACT</a></li>
                      </ul>  
                 </nav>
         </div>
@@ -28,22 +30,29 @@
     
     <section class="slider">
     <div  class="wrapper">
-        <div class="slider__content">
-            <button type="button" class="back-next back-to">
-                <img src="./assets/images/back2.svg" >
-            </button>
-            <section class="phone-container">
-                <img src="./assets/images/iphone-vertical.png" class="phone-vertical">
-                <img src="./assets/images/iphone-horizontal.png" class="phone-horizontal"> 
-            </section>           
-            <button type="button" class="back-next next-to">
-                <img src="./assets/images/next-to.svg"></button>
-         </div>
-     </div>
-     </section>
-            
+         <div class="slider__arrow"></div>
+            <div class="slider__list">
+                <div class="slider__phone">
+                    <div class="slider__phone__container">
+                        <img src="assets/phone/iphone.png" alt="phone" class="phone">
+                        <img src="assets/phone/shadow.png" alt="phone" class="phone__shadow">
+                        <div class="phone__screen"></div>
+                    </div>
+                </div>
+                <div class="slider__phone phone_rotate">
+                    <div class="slider__phone__container">
+                        <img src="assets/phone/iphone.png" alt="phone" class="phone">
+                        <img src="assets/phone/shadow.png" alt="phone" class="phone__shadow phone__shadow_rotate">
+                        <div class="phone__screen phone__screen_horizontal"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="slider__list slider__list_two"></div> 
+            <div class="slider__arrow arrow_rotate"></div> 
+          </div
+       </section>                     
      
-    <section class="our-services">
+    <section class="our-services" id="our-services">
     <div  class="wrapper">  
        <div class="services">
            <h2>Our Services</h2>
@@ -103,17 +112,19 @@
         </div>
     </section>
      
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
             <div class="wrapper">
                     <h2 class="portfolio__title">Portfolio</h2>
-                    <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
+                            eget lacinia odio sem nec elit.</p>
                 <div class="portfolio-content">
-                    <div class="portfolio__tags">
-                        <button class="tag tag-selected">All</button>
-                        <button class="tag">Web Design</button>
-                        <button class="tag">Graphic Design</button>
-                        <button class="tag">Artwork</button>
-                    </div>
+                    <ul class="portfolio__tags">
+                        <li><a class="portfolio__tag" href="#portfolio">All</a></li>
+                        <li><a class="portfolio__tag" href="#portfolio">Web Design</a></li>
+                        <li><a class="portfolio__tag" href="#portfolio">Graphic Design</a></li>
+                        <li><a class="portfolio__tag" href="#portfolio">Artwork</a></li>
+                    </ul>
+                </div>
                     <div class="layout-4-column">
                         <div class="portfolio__image">
                                 <img class="flex-image" src="assets/images/ship.jpg" alt="ship">
@@ -131,21 +142,22 @@
                                 <img class="flex-image last-row" src="assets/images/button.jpg"  alt="button">
                         </div>
                     </div>
-                </div>
-            </div>
+               </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="wrapper">
                 <h2 class="about-us__title">About Us</h2>
-                <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
+                <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo,
+                            tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
                     eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-3-column-about">
                     <div class="designer">
                         <div class="designer__content">
                             <img class="designer__image" src="assets/images/adam.png" alt="Adam">
                             <h4 class="designer__name">Adam Jensen</h4>
-                            <p class="designer__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
+                            <p class="designer__description">Quisque luctus, quam eget molestie commodo,
+                            lacus purus cursus purus, nec rutrum tellus
                                 dolor id lorem.</p>
                                 <div class="icon-social">  
                                       <a class="social-fb" href="https://www.facebook.com/"><img  src="assets/images/Facebook.svg" alt="fb"></a>
@@ -194,21 +206,30 @@
                 </div>
             </div>
         </section>
-        <section class="get-a-quote">
+                            
+                            
+        <section class="get-a-quote" id="get-a-quote">
             <div class="wrapper">
                 <h2> Get a Quote</h2>
                 <p class="get-a-quote__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                      non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                       Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="layout-2-column">
+                <div class="layout-2-column"> 
                     <div class="get-a-quote__form">
-                        <form action"#" method="POST">
-                            <input type="text" name="name" placeholder="Name (Required)" required id="form">
+                        <form class="get-a-quote__form" name="quote" action="" method="POST">
+                            <input type="text" name="name" placeholder="Name (Required)" required pattern="[A-Za-z]{0,10}" id="form">
                             <input type="email" name="email" placeholder="Email (Required)" required id="form">
                             <input type="text" name="subject" placeholder="Subject" id="form">
                             <textarea name="description" rows="12" placeholder="Describe your project in detail..."
-                            style="resize: none;" id="form"></textarea>
-                            <button class="button-submit" type="submit" form="form">Submit</button>
+                            style="resize: none;"></textarea>
+                            <input type="submit" value="Submit" id="submit">
+                             <div id="message-block" class="hidden">
+                             <div id="message">
+                             <h3>Your message has been sent</h3>
+                             <p id="message__txt"></p>
+                             <button class="close-btn">OK</button>
+                        </div>
+                    </div>
                         </form>
                     </div>
                     <div class="contact-information">
@@ -259,5 +280,7 @@
                 </div>
             </div>
         </footer>
+       </main>
+    <script src="script.js"></script>                      
     </html>
     
