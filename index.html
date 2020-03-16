@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/fonts/fonts.css">
         <title>Singolo</title>
     </head>
-<body>
+
     <section class="modal-window display-none" id="modal-window" onclick="closeModal(event)">
         <div class="modal-submit" id="modal-submit">
             <div class="modal-button" id='modal-button'>
@@ -24,7 +24,7 @@
            <div class="logo"><h1>SINGOLO<span class="star">*</span></h1></div>
                 <nav class="header__menu nav-bar">
                     <ul class nav-bar>
-                        <li><a href="#main" class="link-active">HOME</a></li>
+                        <li><a href="#main" class="navigation__link link-active">HOME</a></li>
                         <li><a href="#our-services" class="navigation__link">SERVICES</a></li>
                         <li><a href="#portfolio" class="navigation__link">PORTFOLIO</a></li>
                         <li><a href="#about-us" class="navigation__link">ABOUT</a></li>
@@ -45,7 +45,7 @@
                     <img src="assets/images/Cam.png" class="slider__phone phone-one">
                     <img src="assets/images/shadow.png" class="slider__shadow shadow-one">
                     <img src="assets/images/Cam.png" class="slider__phone phone-two">
-                    <img src="assets/images/shadow.png" class="slider__shadow shadow-two">
+                    <img src="assets/images/Shadow.png" class="slider__shadow shadow-two">
                 </div>
 
                 <div class="slide blue">
@@ -125,12 +125,14 @@
                     <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
                             eget lacinia odio sem nec elit.</p>
                 <div class="portfolio-content">
-                    <ul class="portfolio__tags">
-                        <li><a class="portfolio__tag" href="#portfolio">All</a></li>
-                        <li><a class="portfolio__tag" href="#portfolio">Web Design</a></li>
-                        <li><a class="portfolio__tag" href="#portfolio">Graphic Design</a></li>
-                        <li><a class="portfolio__tag" href="#portfolio">Artwork</a></li>
-                    </ul>
+                    <div class="portfolio__tags" id="portfolio__tags" onclick="randomImages(event)">
+                        <ul class="portfolio__tags" >
+                            <li><a class="portfolio__tag tag_selected" href="#portfolio" id="portfolio-tag">All</a></li>
+                            <li><a class="portfolio__tag" href="#portfolio" id="portfolio-tag">Web Design</a></li>
+                            <li><a class="portfolio__tag" href="#portfolio" id="portfolio-tag" >Graphic Design</a></li>
+                            <li><a class="portfolio__tag" href="#portfolio" id="portfolio-tag">Artwork</a></li>
+                        </ul>
+                    </div>
                 </div>
                     <div class="layout-4-column">
                         <div class="portfolio__image">
@@ -223,12 +225,12 @@
                       Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-2-column"> 
                     <div class="get-a-quote__form">
-                        <form class="get-a-quote__form" name="quote" action="" method="POST">
-                            <input type="text" name="name" placeholder="Name (Required)" required pattern="[A-Za-z]{0,10}" id="form">
-                            <input type="email" name="email" placeholder="Email (Required)" required id="form">
-                            <input type="text" name="subject" placeholder="Subject" id="form">
+                        <form class="get-a-quote__form" name="quote" action="" method="POST" id="form">
+                            <input type="text" name="name" placeholder="Name (Required)" required pattern="[A-Za-z]{0,10}" id="name">
+                            <input type="email" name="email" placeholder="Email (Required)" required id="email">
+                            <input type="text" name="subject" placeholder="Subject" id="txt">
                             <textarea name="description" rows="12" placeholder="Describe your project in detail..."
-                            style="resize: none;"></textarea>
+                            style="resize: none;" id="description"></textarea>
                             <input type="submit" value="Submit" id="submit">
                              <div id="message-block" class="hidden">
                              <div id="message">
